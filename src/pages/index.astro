@@ -6,13 +6,20 @@ import Button from '../components/Button.astro';
 <BaseLayout title="GPS Móvil" >
   <main class=" flex flex-col items-center relative" >
 	<img src="/images/tipos-de-camiones.jpg" alt="main" class=" z-[-1] absolute w-full h-full"/>
-	<div class="flex flex-col w-full h-250 items-center justify-center gap-4" style="background-color: rgba(0, 0, 0, 0.459);">
+	<div class="flex flex-col w-full h-250 items-center justify-center gap-4" style="background-color: rgba(0, 0, 0, 0.5);">
 		<h2 class="text-3xl font-bold text-center">Bienvenido a GPS Móvil</h2>
-		<p class="text-center">Estamos trabajando para brindarte la mejor experiencia. ¡Vuelve pronto!</p>
-		<Button color='green' label='Contáctanos'>
+
+		<p class="text-center max-w-4xl">En GPS MÓVIL ofrecemos soluciones de seguimiento GPS y gestión de flotas que permiten controlar vehículos y cargas en tiempo real, mejorar la seguridad y optimizar costos operativos.</p>
+		<p class="text-center max-w-4xl">A través de nuestra plataforma MS03, accesible desde computador y dispositivos móviles, podrás monitorear ubicaciones, recorridos, velocidades y registros históricos, facilitando una gestión eficiente y confiable, incluso en entornos exigentes como faenas mineras.</p>
+		<p class="text-center max-w-4xl">Estamos trabajando en la nueva versión de nuestro sitio web. Mientras tanto, aquí encontrarás la información esencial para contactarnos y solicitar una cotización.</p>
+		<!--<p class="text-center max-w-4xl">GPS MÓVIL: control, seguridad y eficiencia para tu flota.</p>
+	-->
+		
+		
+		<Button color='green' label='Contáctanos' href="https://api.whatsapp.com/send?phone=56969187715">
         	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>	 
 		</Button>
-		<Button direcion="left" color='blue' label='Acceso a Plataforma MS03'> 
+		<Button direcion="left" color='blue' label='Acceso a Plataforma MS03' href="https://ms03.trackingmate.com/?AspxAutoDetectCookieSupport=1"> 
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rocket"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" /><path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" /><path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
 		</Button>
 	</div>
