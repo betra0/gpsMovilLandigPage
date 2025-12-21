@@ -4,9 +4,12 @@ import Button from '../components/Button.astro';
 ---
 
 <BaseLayout title="GPS Móvil" >
-  <main class=" flex flex-col items-center relative" >
-	<img src="/images/tipos-de-camiones.jpg" alt="main" class=" z-[-1] absolute w-full h-full"/>
-	<div class="flex flex-col w-full h-250 items-center justify-center gap-4" style="background-color: rgba(0, 0, 0, 0.5);">
+  <main class="relative w-full  flex items-center justify-center" >
+	
+	<section class="z-[-1] flex absolute inset-0">
+		<img src="/images/tipos-de-camiones.jpg" alt="main" class="w-full h-full object-cover object-center"/>
+	</section>
+	<div class="flex flex-col w-full min-h-[70vh] items-center justify-center gap-4" style="background-color: rgba(0, 0, 0, 0.5);">
 		<h2 class="text-3xl font-bold text-center">Bienvenido a GPS Móvil</h2>
 
 		<p class="text-center max-w-4xl">En GPS MÓVIL ofrecemos soluciones de seguimiento GPS y gestión de flotas que permiten controlar vehículos y cargas en tiempo real, mejorar la seguridad y optimizar costos operativos.</p>
@@ -25,5 +28,6 @@ import Button from '../components/Button.astro';
 	</div>
 	
   </main>
+  
 </BaseLayout>
 
