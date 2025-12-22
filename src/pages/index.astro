@@ -34,7 +34,10 @@ import Button from '../components/Button.astro';
   </main>
 
   <section class="relative flex mt-6 max-w-[1400px] mx-auto bg-slate-950 rounded-2xl ">
-		<img src="/images/vehiculo-movimiento.avif" alt="" class="w-1/2 object-cover aspect-square max-[650px]:w-full max-[650px]:h-[700px]">
+		<img
+		  src="/images/vehiculo-movimiento.avif"
+		  class="w-1/2 aspect-[14/16] object-cover max-[650px]:w-full max-[650px]:h-200"
+		/>
 		<div class="flex-1 flex flex-col pl-2 items-center
 			max-[650px]:absolute	
 			max-[650px]:inset-0
@@ -42,7 +45,7 @@ import Button from '../components/Button.astro';
     max-[650px]:bg-slate-950/80
 		">
 			<div class="max-w-[450px] flex-1 flex justify-around flex-col">
-			<h3 class="text-2xl font-bold p-0 m-0 text-center">Beneficios económicos que han reportado nuestros clientes</h3>
+				<h3 class="text-2xl font-bold p-0 m-0 text-center">Beneficios económicos que han reportado nuestros clientes</h3>
 
 				<p>- Conocimiento de la ubicación de cada vehículo en cada momento</p>
 				<p>- Conocer el estado y la ubicación de la carga en todo momento</p>
@@ -57,7 +60,14 @@ import Button from '../components/Button.astro';
 				<p>- Disminución de excesos de velocidad y accidentabilidad</p>
 				<p>- Asistencia rápida al vehículo en caso de emergencia</p>
 				<p>- Investigación y gestión mediante el uso de los registros históricos</p>
+				<a href="/contacto" 
+				class="bg-slate-800 text-cyan-400 p-3 rounded-lg text-center mx-auto border border-cyan-500/10 max-w-[200px]
+				hover:bg-cyan-500/10 hover:border-cyan-500/50 transition duration-400 block
+				active:bg-cyan-500/1 active:scale-95
+				">
+					Solicitar cotización</a>
 			</div>
+
 
 		</div>
 	</section>
