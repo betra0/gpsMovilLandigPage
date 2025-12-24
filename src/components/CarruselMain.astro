@@ -5,16 +5,17 @@ import Button from './Button.astro';
 
 <main class="relative w-full  flex items-center min-h-[calc(100vh-85px)] justify-center" >
 
-	<section class="absolute inset-0 flex overflow-x-auto overscroll-x-contain snap-x snap-mandatory touch-pan-x touch-pan-y scroll-smooth">
+	<section class="jsCarousel absolute inset-0 flex overflow-x-auto overscroll-x-contain snap-x snap-mandatory touch-pan-x touch-pan-y scroll-smooth">
 
 		<img src="/images/gflota2.png" alt="main" class="min-w-full h-full object-cover snap-start"/>
 		<img src="/images/carrusel2.jpg" alt="main" class="min-w-full h-full object-cover snap-start"/>
 		<img src="/images/1.avif" alt="main" class="min-w-full h-full object-cover snap-start"/>
+		<img src="/images/gflota2.png" alt="main" class="min-w-full h-full object-cover snap-start"/>
 
 	</section>
 
-	<div class="pointer-events-none flex flex-col w-full items-center justify-center gap-5 z-2 backdrop-blur-[2px] py-2
-	" style="background-color: rgba(0, 0, 0, .3); pointer-events-none">
+	<div class="pointer-events-none flex flex-col w-full items-center justify-center gap-5 z-2 backdrop-blur-[2px] py-4" 
+		style="background-color: rgba(0, 0, 0, .3); pointer-events-none">
 
 		<h1 class="text-4xl font-bold text-center [text-shadow:0_2px_8px_rgba(0,0,0,0.9)]">GPS Móvil</h1>
 		<p class="text-center max-w-3xl mx-auto [text-shadow:0_2px_8px_rgba(0,0,0,0.9)]">
@@ -37,3 +38,34 @@ import Button from './Button.astro';
 	</div>
 	
 </main>
+
+
+
+<script >
+document.querySelectorAll('.jsCarousel').forEach(carousel => {
+	const el = carousel as HTMLElement;
+  const slideWidth = el.clientWidth;
+  const totalSlides = el.children.length;
+
+  setInterval(() => {
+    const next = el.scrollLeft + slideWidth;
+    const maxScroll = slideWidth * (totalSlides - 1);
+
+    el.scrollTo({ left: next, behavior: 'smooth' });
+
+    if (next >= maxScroll) {
+      setTimeout(() => {
+        el.style.scrollBehavior = 'auto';
+        el.scrollLeft = 0;
+
+        // volver a activar smooth
+        requestAnimationFrame(() => {
+          el.style.scrollBehavior = 'smooth';
+        });
+      }, 800);
+    }
+  }, 6500);
+});
+</script>
+
+
