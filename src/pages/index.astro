@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import CarruselMain from '../components/CarruselMain.astro';
 
-const slideClass=`group rounded-xl bg-slate-950 border border-white/5 flex flex-col justify-center items-center pb-4 px-4 
+const slideClass=`group rounded-xl bg-slate-950 border border-white/5 flex flex-col justify-start items-center pb-4 px-4 
 				transition-transform duration-300 hover:-translate-y-3 hover:border-cyan-500/30`
 ---
 
@@ -109,7 +109,8 @@ const slideClass=`group rounded-xl bg-slate-950 border border-white/5 flex flex-
 			</a>
 
 			<div class={`${slideClass}`}>
-  				<img src="/images/tr66-1.avif" class="rounded-lg mb-4 w-full pt-4" />
+  				<img src="/images/tr66-1.avif" 
+				class="rounded-lg mb-4 w-full pt-4 object-cover aspect-auto max-h-[200px] md:max-h-none max-w-[600px] "/>
   				<h4 class="text-xl font-semibold">Rastreador T366</h4>
   				<p class="text-slate-400 mt-2 text-sm">
     				Dispositivo GPS de última generación, resistente al polvo y al agua, que envía la ubicación del vehículo en tiempo real a los servidores.
@@ -117,7 +118,8 @@ const slideClass=`group rounded-xl bg-slate-950 border border-white/5 flex flex-
 			</div>
 
 			<div class={`${slideClass}`}>
-  				<img src="/images/intalacion1.avif" class="rounded-lg mb-4 w-full pt-4" />
+  				<img src="/images/intalacion1.avif" 
+				class="rounded-lg mb-4 w-full pt-4 object-cover aspect-auto max-h-[200px] md:max-h-none max-w-[600px] "/>
   				<h4 class="text-xl font-semibold">Instalación y Configuración</h4>
   				<p class="text-slate-400 mt-2 text-sm">
     				Instalación profesional y segura de los dispositivos T366 en tus vehículos.
@@ -125,7 +127,8 @@ const slideClass=`group rounded-xl bg-slate-950 border border-white/5 flex flex-
 			</div>
 
 			<div class={`${slideClass}`}>
-  				<img src="/images/antirobo1.avif" class="rounded-lg mb-4 w-full pt-4" />
+  				<img src="/images/antirobo1.avif" 
+				class="rounded-lg mb-4 w-full pt-4 object-cover object-[center_70%] aspect-auto max-h-[200px] md:max-h-none max-w-[600px] "/>
   				<h4 class="text-xl font-semibold">Sistema Antirrobo</h4>
   				<p class="text-slate-400 mt-2 text-sm">
     				Sistema antirrobo opcional que permite detener el vehículo en caso de robo desde tu celular.
